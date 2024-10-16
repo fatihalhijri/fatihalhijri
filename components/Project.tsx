@@ -55,7 +55,7 @@ const Project = () => {
   // Tentukan jumlah project yang akan ditampilkan berdasarkan status showMore
   const visibleProjects = showMore ? projects.length : 2;
   return (
-    <div className="pt-[5rem] pb-[3rem] bg-gray-900 ">
+    <div className="pt-[5rem] pb-[3rem] bg-white ">
       <div className="text-center">
         <p className="heading__mini">Recent Work</p>
         <h1 className="heading__primary">
@@ -141,13 +141,27 @@ const Project = () => {
         </button>
       </div> */}
       <div className="text-center flex justify-center  mt-10 ">
-        <button
+        {/* <button
           onClick={toggleShowMore}
           className="px-6  flex flex-row justify-center items-center  py-2 bg-transparent border border-gray-700  w-[80%] text-white rounded-lg"
         >
           {showMore ? "Lihat Lebih Sedikit" : "Lihat Lebih Banyak"}{" "}
-          {/* Ganti label button */}
+          
           {showMore ? <ChevronUpIcon width={28} height={28}/> : <ChevronDownIcon width={28} height={28}  />}
+        </button> */}
+
+        <button
+          onClick={toggleShowMore}
+          className="relative flex flex-row  h-[50px] w-[81%] items-center font-semibold justify-center  bg-primary text-white  shadow-2xl    "
+        >
+          
+            {showMore ? "Lihat Lebih Sedikit" : "Lihat Lebih Banyak"}{" "}
+            {showMore ? (
+              <ChevronUpIcon width={28} height={28} />
+            ) : (
+              <ChevronDownIcon width={28} height={28} />
+            )}
+          
         </button>
       </div>
     </div>

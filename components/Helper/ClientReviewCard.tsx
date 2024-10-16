@@ -10,8 +10,8 @@ interface Props {
 
 const ClientReviewCard = ({ img, user, role }: Props) => {
   return (
-    <div className="m-2 hover:bg-gray-700 transition-all duration-300 rounded-lg">
-      <div className="border-2 p-4 border-gray-700 rounded-xl">
+    <div className="m-2   bg-gray-300 transition-all duration-300 rounded-lg">
+      <div className="p-4  rounded-xl">
         <Image
           alt={user}
           src={img}
@@ -20,9 +20,9 @@ const ClientReviewCard = ({ img, user, role }: Props) => {
           className="rounded-full mx-auto mt-[2rem]"
         />
         <div className="">
-          <SparklesIcon className="w-[6rem] h-[6rem] text-white opacity-15 fixed " />
+          <SparklesIcon className="w-[6rem] h-[6rem] text-black/70 opacity-15 fixed " />
         </div>
-        <p className="text-[15px] text-white opacity-65 mt-[3rem] text-center ">
+        <p className="text-[15px] text-black/70 opacity-65 mt-[3rem] text-center ">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis dicta
           esse hic doloribus fugit consequuntur alias rem distinctio nihil nam!
           A placeat rem facere id minima est ducimus? Maxime, voluptatem.
@@ -35,9 +35,9 @@ const ClientReviewCard = ({ img, user, role }: Props) => {
           <StarIcon className="w-[1.4rem] h-[1.4rem] text-primary " />
         </div>
         <div className="">
-          <SparklesIcon className="w-[6rem] h-[6rem] right-0 text-white opacity-15 fixed " />
+          <SparklesIcon className="w-[6rem] h-[6rem] right-0 text-black/70 opacity-15 fixed " />
         </div>
-        <h1 className="text-[20px] text-center text-white opacity-white  mt-[2rem] font-medium ">
+        <h1 className="text-[20px] text-center text-black/70 opacity-white  mt-[2rem] font-medium ">
           {user}
         </h1>
         <p className="text-primary text-[18px] text-center mb-[3rem]">

@@ -53,7 +53,7 @@ const Homepage = () => {
       {/* <Price/> */}
       <Reviews/>
       <Blog/>
-      <ContactButton/>
+      {/* <ContactButton/> */}
       <Contact/>
       <Footer/>
     </div>

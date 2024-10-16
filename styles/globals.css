@@ -7,7 +7,7 @@ html {
 }
 @layer components {
   .nav__link {
-    @apply relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-yellow-400 text-white after:w-full after:scale-x-0 hover:after:scale-x-100 after:transition after:duration-300 after:origin-right;
+    @apply relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-primary text-black font-semibold after:w-full after:scale-x-0 hover:after:scale-x-100 after:transition after:duration-300 after:origin-right;
   }
   /* .costum-bg {
     background-image: linear-gradient(
@@ -21,15 +21,16 @@ html {
     clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
   } */
   .heading__mini {
-    @apply text-[17px] text-white opacity-75;
+    @apply text-[17px] text-black/70 font-semibold opacity-75;
   }
   .heading__primary {
-    @apply mt-[0.6rem]  leading-[3.5rem] text-white text-[27px] md:text-[30px] lg:text-[38px] xl:text-[45px];
+    @apply mt-[0.6rem]  leading-[3.5rem] text-black/70 font-semibold text-[27px] md:text-[30px] lg:text-[38px] xl:text-[45px];
   }
-  .custom__service {
-    position: relative;
-    z-index: 0;
-  }
+}
+
+/* .custom__service {
+  position: relative;
+  z-index: 0;
 }
 .custom__service:before {
   content: '';
@@ -46,6 +47,12 @@ html {
       rgba(0, 8, 255, 0.4) 0,
       rgba(70, 14, 255, 0.25) 200%
     );
+  background: linear-gradient(to bottom, #323232 0, #3f3f3f 40%, #1c1c1c 150%),
+    linear-gradient(
+      to top,
+      rgba(0, 8, 255, 0.4) 0,
+      rgba(70, 14, 255, 0.25) 200%
+    );
   background-blend-mode: multiply;
   clip-path: circle(50px at 95% 4%);
   border-radius: 0.5rem;
@@ -56,4 +63,4 @@ html {
 .custom__service:hover:before {
   clip-path: circle(1000px at 95% 4%);
   z-index:-1000;
-}
+} */

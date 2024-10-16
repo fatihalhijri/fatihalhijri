@@ -35,21 +35,21 @@ const ProjectCard = ({
 
       {/* Text and Button Section */}
       <div>
-        <h1 className="text-2xl font-bold text-white mb-4">{title}</h1>
-        <p className="text-white opacity-75 text-lg mb-6">{deskripsi}</p>
+        <h1 className="text-2xl font-bold text-black/70 mb-4">{title}</h1>
+        <p className="text-black/70 opacity-75 text-lg mb-6">{deskripsi}</p>
 
         {/* Tech Stack Buttons */}
         <div className="grid grid-cols-2 gap-4">
-          <h1 className="px-6 py-3 bg-blue-700 text-white rounded-lg text-center shadow-lg transition-all hover:bg-blue-600">
+          <h1 className="px-6 py-3 bg-blue-700 text-black/70 font-semibold  text-center shadow-lg transition-all hover:bg-blue-600">
             {tech1}
           </h1>
-          <h1 className="px-6 py-3 bg-white text-black rounded-lg text-center shadow-lg transition-all hover:bg-gray-200">
+          <h1 className="px-6 py-3 bg-teal-500 text-black/70 font-semibold  text-center shadow-lg transition-all hover:bg-teal-200">
             {tech2}
           </h1>
-          <h1 className="px-6 py-3 bg-sky-500 text-white rounded-lg text-center shadow-lg transition-all hover:bg-sky-400">
+          <h1 className="px-6 py-3 bg-sky-500 text-black/70 font-semibold  text-center shadow-lg transition-all hover:bg-sky-400">
             {tech3}
           </h1>
-          <h1 className="px-6 py-3 bg-blue-500 text-white rounded-lg text-center shadow-lg transition-all hover:bg-blue-400">
+          <h1 className="px-6 py-3 bg-blue-500 text-black/70 font-semibold  text-center shadow-lg transition-all hover:bg-blue-400">
             {tech4}
           </h1>
         </div>

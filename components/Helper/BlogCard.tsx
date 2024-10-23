@@ -14,7 +14,7 @@ interface Props {
 
 const BlogCard = ({ title, comment, image, date }: Props) => {
   return (
-    <div className="bg-gray-900">
+    <div className="bg-black/10">
       <Image
         src={image}
         alt="blog"
@@ -23,19 +23,19 @@ const BlogCard = ({ title, comment, image, date }: Props) => {
         className="object-cover w-[100%] h-[100%]"
       />
       <div className="p-4">
-        <div className="mt-[1rem] mb-[1rem] px-3 bg-gray-800 w-fit flex items-center space-x-2 rounded-lg">
+        <div className="mt-[1rem] mb-[1rem] px-3 bg-white w-fit flex items-center space-x-2 rounded-lg">
           <CalendarIcon className="w-[1rem] h-[1rem] text-primary " />
-          <p className="text-white text-[14px] opacity-85 ">{date}</p>
+          <p className="text-black/70 text-[14px] opacity-85 ">{date}</p>
         </div>
-        <h1 className="text-[20px] opacity-85 hover:text-primary transition-all duration-200 cursor-pointer text-white font-semibold underline  ">
+        <h1 className="text-[20px] opacity-85 hover:text-primary transition-all duration-200 cursor-pointer text-black/70 font-semibold underline  ">
           {title}
         </h1>
         <div className="flex items-center mt-[2rem] justify-between">
           <div className="flex items-center space-x-3  ">
             <ChatBubbleLeftRightIcon className="w-[1.4rem] text-primary" />
-            <p className="text-[15px] text-white opacity-85">{comment} Comment</p>
+            <p className="text-[15px] text-black/70 opacity-85">{comment} Comment</p>
           </div>
-          <button className="text-[15px] hover:text-primary transition-all duration-150  text-white font-semibold underline "> Read More</button>
+          <button className="text-[15px] hover:text-primary transition-all duration-150  text-black/70 font-semibold underline "> Read More</button>
         </div>
       </div>
     </div>

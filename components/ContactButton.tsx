@@ -6,7 +6,15 @@ const HeroSection: React.FC = () => {
   };
 
   return (
-    <div className="flex justify-center items-center h-[400px] bg-gradient-to-r from-gray-100 to-gray-200 bg-cover bg-center" style={{ backgroundImage: "url('/images/bg-cv.jpg')" }}>
+    <div
+      className="flex justify-center items-center h-[400px] bg-gradient-to-r from-gray-100 to-gray-200 bg-cover bg-center"
+      style={{
+        backgroundImage: " url('/wave/wave-1.svg')",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center bottom",
+        backgroundSize: "cover"
+      }}
+    >
       <div className="text-center">
         <h1 className="text-3xl font-bold text-gray-800 mb-5">
           Let's Write Your Story Together

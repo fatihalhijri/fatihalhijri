@@ -3,7 +3,7 @@ import ReviewSlider from './Helper/ReviewSlider'
 
 const Reviews = () => {
   return (
-    <div className='pt-[5rem]  pb-[3rem] bg-black/10'>
+    <div className='pt-[5rem]  pb-[3rem] bg-black/10 dark:bg-darkTua'>
         <div className="text-center">
             <p className="heading__mini">Client Reviews</p>
             <h1 className="heading__primary">

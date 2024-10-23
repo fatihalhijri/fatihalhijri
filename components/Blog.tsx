@@ -3,7 +3,7 @@ import BlogCard from "./Helper/BlogCard";
 
 const Blog = () => {
   return (
-    <div className="pt-[5rem] pb-[3rem] bg-white  ">
+    <div className="pt-[5rem] pb-[3rem] bg-white dark:bg-darkTua  ">
       <div className="text-center">
         <p className="heading__mini" id="blog">My Blog</p>
         <h1 className="heading__primary">

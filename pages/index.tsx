@@ -1,5 +1,4 @@
 import About from "@/components/About";
-import Blog from "@/components/Blog";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
@@ -13,7 +12,6 @@ import React, { useEffect, useState } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 import { useRouter } from "next/router";
-import ContactButton from "@/components/ContactButton";
 
 const Homepage = () => {
   const [showNav,setShowNav] = useState(false);
@@ -48,12 +46,11 @@ const Homepage = () => {
       <Hero/>
       <About/>
       <Service/>
-      <Skill/>
+      {/* <Skill/> */}
       <Project/>
       {/* <Price/> */}
-      <Reviews/>
-      <Blog/>
-      {/* <ContactButton/> */}
+      {/* <Reviews/> */}
+      {/* <Blog/> */}
       <Contact/>
       <Footer/>
     </div>

@@ -19,7 +19,7 @@ const TypeWrite = () => {
       speed={50}
       style={{ fontSize: '2em', display: 'inline-block' }}
       repeat={Infinity}
-      className='xl:text-[50px] lg:text-[40px] sm:text-[35px] text-[25px] text-black font-bold '
+      className='xl:text-[50px] lg:text-[40px] sm:text-[35px] text-[25px] text-black dark:text-white font-bold '
     />
   )
 }

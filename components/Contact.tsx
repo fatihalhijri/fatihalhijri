@@ -31,18 +31,18 @@ const Contact = () => {
   };
 
   return (
-    <div className="pt-[5rem] pb-[3rem] bg-black/10">
+    <div className="pt-[5rem] pb-[3rem] bg-white dark:bg-dark">
       <Toaster position="top-center" reverseOrder={false} />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-[2rem] items-center w-[80%] mx-auto">
         <div>
           <p className="heading__mini" id="contact">
-            Get In Touch
+            Mari Terhubung
           </p>
           <h1 className="heading__primary">
-            Let's make your <span className="text-primary">Brand</span>{" "}
-            brilliant
+            Hubungi   <span className="text-primary">Saya</span>{" "}
+            
           </h1>
-          <p className="text-[15px] opacity-75 text-black mt-[1rem]">
+          <p className="text-[15px] opacity-75 text-black dark:text-white mt-[1rem]">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure
             officiis cupiditate debitis voluptas neque? Expedita, esse quam
             deleniti officia fugiat sed quas et, provident ratione saepe vero
@@ -55,12 +55,12 @@ const Contact = () => {
 
         <div>
           <form onSubmit={onSubmit}>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-[1rem] items-center">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-[1rem] items-center ">
               <input
                 type="text"
                 placeholder="Name"
                 name="name"
-                className="py-[0.7rem] outline-none text-black bg-white rounded-md px-4"
+                className="py-[0.7rem] outline-none text-black dark:text-white placeholder:dark:text-white  bg-black/10 dark:bg-darkTua rounded-md px-4"
                 required
               />
 
@@ -69,7 +69,7 @@ const Contact = () => {
                 placeholder="Email"
                 id="email"
                 name="email"
-                className="py-[0.7rem] outline-none text-black bg-white rounded-md px-4"
+                className="py-[0.7rem] outline-none text-black dark:text-white placeholder:dark:text-white  bg-black/10 dark:bg-darkTua rounded-md px-4"
                 required
               />
               <ValidationError
@@ -83,7 +83,7 @@ const Contact = () => {
               type="text"
               placeholder="Subject"
               name="subject"
-              className="py-[0.7rem] mt-[1.5rem] mb-[1.5rem] w-full outline-none text-black bg-white rounded-md px-4"
+              className="py-[0.7rem] mt-[1.5rem] mb-[1.5rem] w-full outline-none text-black dark:text-white placeholder:dark:text-white  bg-black/10 dark:bg-darkTua rounded-md px-4"
               required
             />
 
@@ -92,7 +92,7 @@ const Contact = () => {
               name="message"
               id="message"
               rows={4}
-              className="py-[0.7rem] w-full outline-none text-black bg-white px-4 rounded-md"
+              className="py-[0.7rem] w-full outline-none text-black dark:text-white placeholder:dark:text-white  bg-black/10 dark:bg-darkTua px-4 rounded-md"
               required
             ></textarea>
             <ValidationError

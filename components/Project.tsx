@@ -6,13 +6,13 @@ import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/16/solid";
 const Project = () => {
   const projects = [
     {
-      title: "FullStack Food delivery Webapp",
+      title: "FullStack MySmk Website Application",
       tech1: "React",
       tech2: "NextJs",
-      tech3: "Node Js",
-      tech4: "MongoDB",
-      deskripsi: "Lorem ipsum dolor sit amet...",
-      image: "/images/p4.png", // Ganti dengan path gambar sesuai
+      tech3: "NodeJs",
+      tech4: "NestJs",
+      deskripsi: "Saya sudah berkolaborasi dengan SMK Madinatul Quran untuk membuat aplikasi website FullStack MySmk Madinatul Quran",
+      image: "/images/mysmk.png", // Ganti dengan path gambar sesuai
     },
     {
       title: "Travel Website",
@@ -55,62 +55,15 @@ const Project = () => {
   // Tentukan jumlah project yang akan ditampilkan berdasarkan status showMore
   const visibleProjects = showMore ? projects.length : 2;
   return (
-    <div className="pt-[5rem] pb-[3rem] bg-white ">
+    <div className="pt-[5rem] pb-[3rem] bg-black/10 dark:bg-darkTua">
       <div className="text-center">
-        <p className="heading__mini">Recent Work</p>
+        <p className="heading__mini">Proyek Terbaru</p>
         <h1 className="heading__primary">
-          My Best <span className="text-primary">Projects</span>
+            <span className="text-primary">Proyek </span> Saya
         </h1>
       </div>
-      <div className="grid lg:grid-cols-2  w-[90%] mx-auto">
-        {/* <ProjectCard
-          title={"E-commerce Website"}
-          tech1="React"
-          tech2="NextJs"
-          tech3="Tailwind"
-          tech4="TypeScript"
-          deskripsi=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-            labore nisi optio, excepturi qui amet. Excepturi non deleniti
-            exercitationem unde aliquid repellendus, dignissimos fugiat magni
-            iure hic ratione, vero et?"
-          image="/images/p1.png"
-        />
-        <ProjectCard
-          title={"Portofolio Website"}
-          tech1="React"
-          tech2="NextJs"
-          tech3="Tailwind"
-          tech4="TypeScript"
-          deskripsi=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-            labore nisi optio, excepturi qui amet. Excepturi non deleniti
-            exercitationem unde aliquid repellendus, dignissimos fugiat magni
-            iure hic ratione, vero et?"
-          image="/images/p2.png"
-        />
-        <ProjectCard
-          title={"FullStack Food delivery Webapp"}
-          tech1="React"
-          tech2="NextJs"
-          tech3="Node Js"
-          tech4="MongoDB"
-          deskripsi=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-            labore nisi optio, excepturi qui amet. Excepturi non deleniti
-            exercitationem unde aliquid repellendus, dignissimos fugiat magni
-            iure hic ratione, vero et?"
-          image="/images/p3.png"
-        />
-        <ProjectCard
-          title={"Travel Website"}
-          tech1="React"
-          tech2="NextJs"
-          tech3="Node Js"
-          tech4="TypeScript"
-          deskripsi=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-            labore nisi optio, excepturi qui amet. Excepturi non deleniti
-            exercitationem unde aliquid repellendus, dignissimos fugiat magni
-            iure hic ratione, vero et?"
-          image="/images/p4.png"
-        /> */}
+      <div className="grid lg:grid-cols-2  md:w-[90%] w-[100%] mx-auto">
+        
 
         <AnimatePresence>
           {projects.slice(0, visibleProjects).map((project, index) => (

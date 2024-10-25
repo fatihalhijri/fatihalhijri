@@ -29,7 +29,7 @@ const ProjectCard = ({
           alt={title}
           width={700}
           height={700}
-          className="object-contain rounded-xl mx-auto shadow-lg "
+          className="object-fit rounded-xl mx-auto shadow-lg "
         />
       </div>
 

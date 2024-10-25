@@ -1,4 +1,4 @@
-import { EnvelopeIcon, MapIcon, PhoneIcon } from "@heroicons/react/16/solid";
+import { EnvelopeIcon, MapIcon } from "@heroicons/react/16/solid";
 import Link from "next/link";
 import React from "react";
 
@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="pt-[5rem] pb-[3rem] bg-black/10 shadow-black/20 shadow-sm dark:bg-darkTua">
       <div className="w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2rem] border-b-[1.4px] pb-5 border-gray-600 border-opacity-40 ">
         <div>
-          <div className="font-logo text-black/70 dark:text-white text-[18px] font-semibold text-lg">
+          <div className=" text-black/70 dark:text-white text-[18px] font-medium text-lg">
             <span className="text-[30px] md:text-[40px] text-primary ">P</span>
             ortofolio
           </div>
@@ -65,12 +65,7 @@ const Footer = () => {
               fatihalhijri02@gmail.com
             </p>
           </div>
-          <div className="flex items-center mt-[1rem]  space-x-2  ">
-            <PhoneIcon className="w-[1rem] h-[1rem] text-primary " />
-            <p className="text-[17px] font-normal text-black/70 dark:text-white opacity-75  ">
-              +62 851-7962-0695
-            </p>
-          </div>
+          
         </div>
       </div>
       <div className="mt-[1.4rem] w-[80%] mx-auto text-black/70 dark:text-white opacity-70 ">

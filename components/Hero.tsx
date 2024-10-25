@@ -1,14 +1,13 @@
-import React, { useEffect, useState } from "react";
+
 import TypeWrite from "./Helper/TypeWrite";
 import Image from "next/image";
 import Link from "next/link";
 
 const Hero = () => {
   const handleClick = () => {
-    window.open("https://wa.me/6281234567890", "_blank"); 
+    window.open("https://wa.me/6281234567890", "_blank");
   };
 
-  
   return (
     <div className=" md:pt-[4vh]  h-[85vh] md:h-[100vh]   bg-white dark:bg-dark">
       <div className="flex justify-center flex-col  lg:w-[80%] md:w-[85%] w-[90%]  h-[100%] mx-auto">
@@ -62,13 +61,11 @@ const Hero = () => {
               <p className="mt-[1.2rem] text-[15px] md:text-17 dark:text-white  dark:opacity-85 text-black/70  font-medium text-base ">
                 Selamat datang di portofolio saya! Di sini, Anda dapat melihat
                 karya-karya saya di bidang pengembangan frontend dan desain
+                grafis.
+                {/* Selamat datang di portofolio saya! Di sini, Anda dapat melihat
+                karya-karya saya di bidang pengembangan frontend dan desain
                 grafis. Saya siap menghadapi tantangan baru dan terus belajar
-                untuk menjadi lebih baik di setiap proyek.
-                {/* Siswa SMK Madinatul Quran yang bersemangat dalam pengembangan
-                frontend dan desain grafis. Berpengalaman dalam merancang dan
-                mengimplementasikan antarmuka pengguna serta menganalisis hasil
-                proyek. Siap mengasah keterampilan lebih lanjut melalui magang
-                atau PKL. */}
+                untuk menjadi lebih baik di setiap proyek. */}
               </p>
               <div className="  mt-[1rem] flex-row gap-2 lg:hidden  flex ">
                 <div className="w-10 h-10 flex items-center justify-center rounded-full  dark:bg-white">
@@ -108,14 +105,19 @@ const Hero = () => {
                   </Link>
                 </div>
               </div>
-              <div className="mt-[1rem] flex items-center space-x-6  ">
+              <div className="mt-3 ">
+                <button onClick={handleClick} className="text-center px-6 py-3 bg-primary  text-black/70 dark:text-white font-semibold   shadow-lg transition-all hover:bg-blue-600">
+                  pekerjakan saya
+                </button>
+              </div>
+              {/* <div className="mt-[1rem] flex items-center space-x-6  ">
                 <button className="relative flex h-[50px] w-40 items-center font-semibold justify-center overflow-hidden bg-red-500 text-white  shadow-2xl  transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-blue-600 before:duration-500 before:ease-out hover:before:h-56 hover:before:w-56  ">
                   <span className="relative z-10" onClick={handleClick}>
-                    Hire Me
+                    pekerjakan saya
                   </span>
                 </button>
                 
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="hidden md:flex ">

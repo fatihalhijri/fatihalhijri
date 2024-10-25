@@ -11,43 +11,44 @@ const Project = () => {
       tech2: "NextJs",
       tech3: "NodeJs",
       tech4: "NestJs",
-      deskripsi: "Saya sudah berkolaborasi dengan SMK Madinatul Quran untuk membuat aplikasi website FullStack MySmk Madinatul Quran",
-      image: "/images/mysmk.png", // Ganti dengan path gambar sesuai
+      deskripsi:
+        "Saya sudah berkolaborasi dengan SMK Madinatul Quran untuk membuat aplikasi website FullStack MySmk Madinatul Quran",
+      image: "/images/mysmk.webp", // Ganti dengan path gambar sesuai
     },
     {
-      title: "Travel Website",
+      title: "E-Commerce Website Design",
+      tech1: "ReactJs",
+      tech2: "NextJs",
+      tech3: "Node Js",
+      tech4: "TailwindCss",
+      deskripsi:
+        "Saya sudah menyelesaikan design simple website e-commerce sederhana bernama sabun Sunfia!",
+      image: "/images/bg-sunfia.webp", // Ganti dengan path gambar sesuai
+    },
+    {
+      title: "Website Perpustakaan",
+      tech1: "ReactJs",
+      tech2: "NextJs",
+      tech3: "NestJs",
+      tech4: "TypeScript",
+      deskripsi: "",
+      image: "/images/bg-perpus.webp", // Ganti dengan path gambar sesuai
+    },
+    {
+      title: "Basic Website Chat",
       tech1: "React",
       tech2: "NextJs",
       tech3: "Node Js",
       tech4: "TypeScript",
-      deskripsi: "Lorem ipsum dolor sit amet...",
-      image: "/images/p4.png", // Ganti dengan path gambar sesuai
-    },
-    {
-      title: "Travel Website",
-      tech1: "React",
-      tech2: "NextJs",
-      tech3: "Node Js",
-      tech4: "TypeScript",
-      deskripsi: "Lorem ipsum dolor sit amet...",
-      image: "/images/p4.png", // Ganti dengan path gambar sesuai
-    },
-    {
-      title: "Travel Website",
-      tech1: "React",
-      tech2: "NextJs",
-      tech3: "Node Js",
-      tech4: "TypeScript",
-      deskripsi: "Lorem ipsum dolor sit amet...",
-      image: "/images/p4.png", // Ganti dengan path gambar sesuai
+      deskripsi: "Sedang mengembangkan website chat, beberapa fitur utama selesai, namun belum sepenuhnya selesai.",
+      image: "/images/bg-chat.png", // Ganti dengan path gambar sesuai
     },
 
     // Tambahkan project lainnya di sini
   ];
-  // State untuk menentukan apakah lebih banyak project ditampilkan atau tidak
   const [showMore, setShowMore] = useState(false);
 
-  // Fungsi untuk toggle menampilkan lebih banyak atau lebih sedikit project
+ 
   const toggleShowMore = () => {
     setShowMore((prevShowMore) => !prevShowMore);
   };
@@ -55,16 +56,17 @@ const Project = () => {
   // Tentukan jumlah project yang akan ditampilkan berdasarkan status showMore
   const visibleProjects = showMore ? projects.length : 2;
   return (
-    <div className="pt-[5rem] pb-[3rem] bg-black/10 dark:bg-darkTua">
+    <div
+      id="proyek"
+      className="pt-[5rem] pb-[3rem] bg-black/10 dark:bg-darkTua"
+    >
       <div className="text-center">
         <p className="heading__mini">Proyek Terbaru</p>
         <h1 className="heading__primary">
-            <span className="text-primary">Proyek </span> Saya
+          <span className="text-primary">Proyek </span> Saya
         </h1>
       </div>
       <div className="grid lg:grid-cols-2  md:w-[90%] w-[100%] mx-auto">
-        
-
         <AnimatePresence>
           {projects.slice(0, visibleProjects).map((project, index) => (
             <motion.div
@@ -88,33 +90,18 @@ const Project = () => {
           ))}
         </AnimatePresence>
       </div>
-      {/* <div className="flex justify-center w-[80%] mx-auto  ">
-        <button className=" flex-grow px-6 py-3 bg-transparent border border-spacing- text-white rounded-lg text-center shadow-lg transition-all hover:bg-blue-600">
-          Lihat Lebih Banyak
-        </button>
-      </div> */}
-      <div className="text-center flex justify-center  mt-10 ">
-        {/* <button
-          onClick={toggleShowMore}
-          className="px-6  flex flex-row justify-center items-center  py-2 bg-transparent border border-gray-700  w-[80%] text-white rounded-lg"
-        >
-          {showMore ? "Lihat Lebih Sedikit" : "Lihat Lebih Banyak"}{" "}
-          
-          {showMore ? <ChevronUpIcon width={28} height={28}/> : <ChevronDownIcon width={28} height={28}  />}
-        </button> */}
 
+      <div className="text-center flex justify-center  mt-10 ">
         <button
           onClick={toggleShowMore}
           className="relative flex flex-row  h-[50px] w-[81%] items-center font-semibold justify-center  bg-primary text-white  shadow-2xl    "
         >
-          
-            {showMore ? "Lihat Lebih Sedikit" : "Lihat Lebih Banyak"}{" "}
-            {showMore ? (
-              <ChevronUpIcon width={28} height={28} />
-            ) : (
-              <ChevronDownIcon width={28} height={28} />
-            )}
-          
+          {showMore ? "Lihat Lebih Sedikit" : "Lihat Lebih Banyak"}{" "}
+          {showMore ? (
+            <ChevronUpIcon width={28} height={28} />
+          ) : (
+            <ChevronDownIcon width={28} height={28} />
+          )}
         </button>
       </div>
     </div>

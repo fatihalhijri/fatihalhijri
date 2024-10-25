@@ -1,7 +1,6 @@
 
 import React, { useState, useEffect } from "react";
-import { SunIconKu } from "./Collection/sunIcon";
-import { DarkIconKu } from "./Collection/darkIcon";
+import { FaMoon, FaSun } from "react-icons/fa";
 
 const DarkModeToggle: React.FC = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -36,7 +35,7 @@ const DarkModeToggle: React.FC = () => {
         onClick={toggleDarkMode}
         className="px-2 py-2 rounded-full text-white bg-primary"
       >
-        {isDarkMode ? <SunIconKu/> : <DarkIconKu/>}
+        {isDarkMode ? <FaSun/> : <FaMoon />}
       </button>
     </div>
   );

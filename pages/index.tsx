@@ -5,9 +5,7 @@ import Hero from "@/components/Hero";
 import Nav from "@/components/Nav";
 import NavMobile from "@/components/NavMobile";
 import Project from "@/components/Project";
-import Reviews from "@/components/Reviews";
 import Service from "@/components/Service";
-import Skill from "@/components/Skill";
 import React, { useEffect, useState } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
@@ -46,11 +44,7 @@ const Homepage = () => {
       <Hero/>
       <About/>
       <Service/>
-      {/* <Skill/> */}
       <Project/>
-      {/* <Price/> */}
-      {/* <Reviews/> */}
-      {/* <Blog/> */}
       <Contact/>
       <Footer/>
     </div>

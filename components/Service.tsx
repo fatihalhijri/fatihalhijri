@@ -7,7 +7,7 @@ const Service = () => {
       <div className="text-center text-white">
         <p className="heading__mini" id="service">Yang Sering Dilakukan</p>
         <h1 className="heading__primary">
-        Pemrograman Yang Biasa <br /><span className="text-primary">Dilakukan</span> 
+        Hal Yang Biasa <br /><span className="text-primary">Dilakukan</span> 
         </h1>
       </div>
       <div className="md:pt-[5rem] pt-[2rem] w-[80%]  mx-auto grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-[3rem] items-center ">

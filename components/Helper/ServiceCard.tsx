@@ -6,7 +6,6 @@ import {
   RocketLaunchIcon,
   ServerIcon,
 } from "@heroicons/react/16/solid";
-import React, { ElementType } from "react";
 
 interface Props {
   title: string;
@@ -29,7 +28,7 @@ const ServiceCard = ({ num, title,img ,desc}: Props) => {
     (iconMapping as Record<string, React.ElementType>)[num] || CommandLineIcon;
   return (
     <div className="bg-black/10 custom__service z-[100]  transform rounded-2xl text-center p-6 shadow-md "  style={{
-      backgroundImage: `url('/wave/${img}.png')`, // Menambahkan wave SVG
+      backgroundImage: `url('/wave/${img}.png')`, 
       backgroundRepeat: "no-repeat",
       backgroundPosition: "center, bottom", // Posisi gambar latar
       backgroundSize: "cover, contain" // Ukuran untuk background SVG
@@ -40,7 +39,7 @@ const ServiceCard = ({ num, title,img ,desc}: Props) => {
       <h1 className="text-[25px] md:font-bold font-semibold relative z-[1] text-black/70 dark:text-white mt-[1rem] ">
         {title}
       </h1>
-      <p className="text-black/40 dark:text-white font-medium  text-[15px] opacity-90 mt-[0.8rem] ">{desc}</p>
+      <p className="text-black/70 dark:text-white font-medium  text-[15px]  mt-[0.8rem] ">{desc}</p>
       <p className="text-black/70  dark:text-white text-[1.8rem] font-bold top-2 right-4 absolute">{num}</p>
     </div>
   );

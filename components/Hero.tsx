@@ -135,14 +135,14 @@ const Hero = () => {
             /> */}
             {/* Light Mode Image */}
             <Image
-              src="/images/fatih-hero-D.png"
+              src="/images/fatih-dark.webp"
               alt="hero "
               width={550}
               height={550}
               className="object-contain hidden dark:block"
             />
             <Image
-              src="/images/fatih-hero-L.png"
+              src="/images/fatih-light.webp"
               alt="hero"
               width={700}
               height={700}

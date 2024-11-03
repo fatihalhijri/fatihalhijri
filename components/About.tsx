@@ -37,7 +37,7 @@ const About = () => {
               onClick={handleDownload}
               className="text-center px-6 py-3 bg-primary  text-black/70 dark:text-white font-semibold   shadow-lg transition-all hover:bg-blue-600"
             >
-              <span>pekerjakan saya</span>
+              <span>Unduh CV</span>
             </button>
           </div>
         </div>

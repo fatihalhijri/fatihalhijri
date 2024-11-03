@@ -31,7 +31,7 @@ const Project = () => {
       tech2: "NextJs",
       tech3: "NestJs",
       tech4: "TypeScript",
-      deskripsi: "",
+      deskripsi: "Membangun Design website perpustakaan sederhana  ",
       image: "/images/bg-perpus.webp", // Ganti dengan path gambar sesuai
     },
     {

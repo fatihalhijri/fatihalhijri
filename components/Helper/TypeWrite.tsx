@@ -6,13 +6,13 @@ const TypeWrite = () => {
     <TypeAnimation
       sequence={[
         // Same substring at the start will only be typed out once, initially
-        'a React Developer',
+        'Seorang React Developer',
         1000, // wait 1s before replacing "Mice" with "Hamsters"
-        'a Next JS Developer',
+        'Seorang Next JS Developer',
         1000,
-        'a Full Stack Developer',
+        'Seorang Full Stack Developer',
         1000,
-        'a Web Design',
+        'Seorang Web Design',
         1000
       ]}
       wrapper="span"

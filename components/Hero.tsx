@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Hero = () => {
   const handleClick = () => {
-    window.open("https://wa.me/6281234567890", "_blank");
+    window.open("https://wa.me/6285179620695", "_blank");
   };
 
   return (

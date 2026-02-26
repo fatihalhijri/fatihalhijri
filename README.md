@@ -2,7 +2,6 @@
 
 🎓 Computer Science Student at Universitas Amikom Yogyakarta  
 💻 Passionate in Web Development & Backend Engineering  
-🚀 Currently learning: Next.js, TypeScript, NestJS  
 
 ---
 
@@ -23,4 +22,5 @@
 
 ## 📫 Let's Connect
 - Instagram: @el_hijri
-- LinkedIn: (isi nanti kalau sudah ada)
+- LinkedIn: www.linkedin.com/in/fatihalhijri
+
